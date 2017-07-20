@@ -1,0 +1,8 @@
+FROM golang:latest
+MAINTAINER Steve Wade <swade@apprenda.com>
+
+ENV GOOS linux
+ENV CGO_ENABLED 0
+
+RUN mkdir /app
+WORKDIR /app
